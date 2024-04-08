@@ -1,6 +1,6 @@
-*{
+/* *{
     border: 1px solid red;
-}
+} */
 
 
 html{
@@ -150,7 +150,7 @@ main{
     color: #fff;
     font-size: 18px;
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 #mainDireita{
@@ -162,22 +162,22 @@ main{
 }
 
 #eclipse{
-    width: 550px;
+    width: 630px;
     position: absolute;
 }
 
 #fundoGrade{
     position: absolute;
-    width: 650px;
+    width: 800px;
 }
 
 #group{
     position: absolute;
-    width: 690px;
+    width: 800px;
     margin-right: 180px;
 }
 
 #QrCode{
-    width: 180px;
+    width: 200px;
     border-radius: 20px;
 }
