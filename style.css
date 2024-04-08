@@ -1,7 +1,8 @@
-    /* *{
-        border: 1px solid red;
-    } */
-                    
+/* *{
+    border: 1px solid red;
+} */
+
+
 html{
     width: 100%;
     height: 100%;
@@ -88,19 +89,97 @@ main{
     width: 50%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;    
+    gap: 20px;
 }
 
 #titulo{
     color: #fff;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
+#subtitulo{
+    color: #fff;
+    font-size: 25px;
+}
+
+#inputAgencia{
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #fa7a2a;
+    width: 120px;
+    border-right:0px;
+}
+
+#inputAgencia::placeholder{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+#inputConta{
+    padding: 20px;
+    border: 3px solid #fff;
+    background-color: #fa7a2a;
+    width: 110px;
+}
+
+#inputConta::placeholder{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+#botaoAgConta{
+    border: none;
+    background-color: #fff;
+    width: 90px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+
+#setaBotão{
+    width: 10px;
+}
+
+#paragrafoQrCode{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
 
 #mainDireita{
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
+#eclipse{
+    width: 550px;
+}
+
+#fundoGrade{
+    position: absolute;
+    width: 650px;
+}
+
+#group{
+    position: absolute;
+    width: 690px;
+    margin-right: 180px;
+}
+
+#QrCode{
+    width: 180px;
+    position: absolute;
+    border-radius: 20px;
+    top: 270px;
+    left: 770px;
+}
