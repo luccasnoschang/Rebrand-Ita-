@@ -1,0 +1,83 @@
+/* *{
+    border: 1px solid red;
+} */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background-color: #FF6200; 
+    height: 100px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#headerEsquerda{
+    width: 20%; 
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#headerMeio{
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.opcoesHeader{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    color:#fff;
+}
+
+
+#headerDireita{
+    width: 30%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#BotaoAbraSuaConta{
+    padding: 12px;
+    border-radius: 7px;
+    border: none;
+    color: #FF6200;
+    font-size: 20px;
+}
+
+main{
+    background:linear-gradient(#FF6200, #FF9452);
+    height: 800px;
+}
+
+#mainCima{
+
+}
+
+
