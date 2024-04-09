@@ -31,7 +31,13 @@
             </div>
 
             <div id="headerDireita">
-                <button id="BotaoAbraSuaConta"> Abra sua conta <img id="seta" src="assets/Seta.png" alt="Seta"></button>
+              
+                <div style="display: flex; position: relative;">
+                    <input id="inputAgencia" type="text" placeholder="Agência">
+                    <input id="inputConta" type="text" placeholder="Conta">
+                    <button id="botaoAgConta"><img id="setaBotão" src="assets/Seta.png" alt=""></button>
+                </div>
+                
             </div>
 
         </header>
@@ -42,27 +48,30 @@
                 <div>
                     <div>
                         <p id="titulo">Abra sua conta no itaú</p>
+                        <br>
                         <p id="subtitulo"> Encontre a conta que mais combina com você</p>
                     </div>
 
-                    <div style="display: flex; margin-top: 40px;">
-                        <input id="inputAgencia" type="text" placeholder="Agência">
-                        <input id="inputConta" type="text" placeholder="Conta">
-                        <button id="botaoAgConta"><img id="setaBotão" src="assets/Seta.png" alt=""></button>
-                    </div>
+                        <button id="BotaoAbraSuaConta"> Abra sua conta <img id="seta" src="assets/Seta.png" alt="Seta"></button>
                     
                     <p id="paragrafoQrCode">Aponte sua câmera do celular para o QR Code e saiba mais!</p>
+                    
                 </div>
+                
+                <div style="display: flex; align-items: center; justify-content: end; height: 300px; width: 50%; position: absolute;">
+                    <img style="margin-top: 90px;" src="assets/setaCurvada.png" alt="">
+                </div>
+
             </div>
 
             <div id="mainDireita">
-
-                <div style="width: 100%; height: 100%; display: flex; align-items: center; margin-bottom: 80px; ">
-                    <img id="QrCode" src="assets/QrCode.png" alt="">
-                </div>
-
                 <img id="eclipse" src="assets/Ellipse.png" alt="">
                 <img id="fundoGrade" src="assets/fundoGrade.png" alt="">
+
+                <div id="divQrCode">
+                    <img id="QrCode" src="assets/QrCode.png" alt="">
+                </div>
+                
                 <img id="group" src="assets/Group.png" alt="">
                
 

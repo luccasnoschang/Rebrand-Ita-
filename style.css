@@ -41,7 +41,7 @@ header{
 }
 
 #headerMeio{
-    width: 50%; 
+    width: 40%; 
     height: 100%;
     display: flex;
     align-items: center;
@@ -58,29 +58,55 @@ header{
 
 
 #headerDireita{
-    width: 30%; 
+    width: 40%; 
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#BotaoAbraSuaConta{
-    padding: 10px;
-    border-radius: 7px;
+#inputAgencia{
+    padding: 12px;
+    border: 3px solid #fff;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #FF6200;
+    width: 120px;
+    border-right:0px;
+}
+
+#inputAgencia::placeholder{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+#inputConta{
+    padding: 12px;
+    border: 3px solid #fff;
+    background-color: #FF6200;
+    width: 110px;
+}
+
+#inputConta::placeholder{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+#botaoAgConta{
     border: none;
-    color: #FF6200;
-    font-size: 20px;
-    font-weight: 500;
+    background-color: #fff;
+    width: 70px;
+    border-radius: 0px 15px 15px 0px;
     cursor: pointer;
 }
 
-#seta{
-    width: 6px;
+#setaBotão{
+    width: 10px;
 }
 
 main{
-    background:linear-gradient(#FF6200, #FF9452);
+    background:linear-gradient(#FF6200, #fa8841);
     height: 80%;
     display: flex;
 }
@@ -89,7 +115,7 @@ main{
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;    
     gap: 20px;
@@ -103,54 +129,43 @@ main{
 
 #subtitulo{
     color: #fff;
-    font-size: 25px;
+    font-size: 28px;
 }
 
-#inputAgencia{
-    padding: 20px;
-    border: 3px solid #fff;
-    border-radius: 15px 0px 0px 15px;
-    background-color: #fa7a2a;
-    width: 120px;
-    border-right:0px;
-}
-
-#inputAgencia::placeholder{
-    color: white;
-    font-size: 17px;
-    text-align: center;
-}
-
-#inputConta{
-    padding: 20px;
-    border: 3px solid #fff;
-    background-color: #fa7a2a;
-    width: 110px;
-}
-
-#inputConta::placeholder{
-    color: white;
-    font-size: 17px;
-    text-align: center;
-}
-
-#botaoAgConta{
+#BotaoAbraSuaConta{
+    padding: 25px;
+    border-radius: 10px;
     border: none;
-    background-color: #fff;
-    width: 90px;
-    border-radius: 0px 15px 15px 0px;
+    color: #FF6200;
+    font-size: 22px;
+    font-weight: 600;
     cursor: pointer;
+    margin: 45px 30px 30px 0px;
+    width: 300px;
+    border: 2px solid #fff;
+    transition: 0.3s;
+    position: relative;
+    z-index: 9999;
 }
 
-#setaBotão{
-    width: 10px;
+#seta{
+    margin-left: 50px;
+    width: 9px;
+}
+
+#BotaoAbraSuaConta:hover{
+    background-color: #ff7b28;
+    color: #fff;
+    font-weight:bold;
+    border: 2px solid #fff;
+    transition: 0.3s;
 }
 
 #paragrafoQrCode{
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 40px;
-    margin-bottom: 200px;
+    margin-bottom: 170px;
 }
 
 #mainDireita{
@@ -161,23 +176,33 @@ main{
     align-items: end;
 }
 
-#eclipse{
-    width: 630px;
-    position: absolute;
-}
-
-#fundoGrade{
-    position: absolute;
-    width: 800px;
-}
-
-#group{
-    position: absolute;
-    width: 800px;
-    margin-right: 180px;
+#divQrCode{
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 120px;
 }
 
 #QrCode{
     width: 200px;
     border-radius: 20px;
+    position: absolute;
 }
+
+#eclipse{
+    width: 680px;
+    position: absolute;
+}
+
+#fundoGrade{
+    position: absolute;
+    width: 780px;
+}
+
+#group{
+    position: absolute;
+    width: 850px;
+    margin-right: 180px;
+}
+
